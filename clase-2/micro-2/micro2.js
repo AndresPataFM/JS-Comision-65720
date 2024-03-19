@@ -8,12 +8,12 @@ for (let index = 0; index < cantidad; index) {
 } 
 */
 
-// let cantidad = prompt('INGRESE CANTIDAD DE REPETICIONES');
-// let texto = prompt('INGRESE TEXTO A REPETIR');
+let cantidad = parseInt(prompt('INGRESE CANTIDAD DE REPETICIONES'));
+let texto = prompt('INGRESE TEXTO A REPETIR');
 
-// for (let index = 0; index < cantidad; index++) {
-//   console.log(texto);
-// }
+for (let index = 0; index < cantidad; index++) {
+  console.log(texto);
+} 
 
 // ¿Qué tiene que hacer este código?
 // ¿Por qué no cumple con su función?
@@ -31,13 +31,21 @@ for (let index = 0; index < lados; index++) {
 */
 
 // control de asensor en planta baja
-let pisos = prompt('Ingrese al piso que desea ir');
-for (let index = 1; (index <= pisos) && (pisos <= 21) ; index++) {
-  if (index === 13) {
-    continue
+// Esto no porque cambias el tipo de dato de vriable
+// let lados = prompt('INGRESE CANTIDAD DE LADOS')
+// lados = parseInt(lados)
+// Asi
+// let ladosUsuario = prompt('INGRESE CANTIDAD DE LADOS')
+// lados = parseInt(ladosUsuarios)
+// o asi
+let lados = parseInt(prompt('INGRESE CANTIDAD DE LADOS'));
+for (let index = 1; index <= lados; index++) {
+  if (index <= 2) {
+    alert(`Mientras tenga menos de 2 lados no es una figura`)
+    index++
   }
-  alert(`piso nro ${index}`);
-}
+  alert(`lado ${index}`);
+} 
 
 // ¿Qué tiene que hacer este código?
 // ¿Por qué no cumple con su función?

@@ -129,7 +129,7 @@ El estrictamente igual compara 2 valores y si el valor y el tipo de dato es el m
 a === b ➡️ a estrictamente igual que b
 
 1 === 1 ➡️ true
-1 === "1" ➡️ false
+1 === "1" ➡️ false, si bien el valor es el mismo, el tipo de dato no lo es.
 1 === 1.0 ➡️ true, es la unica excepción a la regla el que x y x.0000000 son iguales, ya que Js corta los 0 extra a los números, dejandolo como X
 1 === "hola" ➡️ false
 1 === "uno" ➡️ false
@@ -157,6 +157,7 @@ a == b ➡️ a es similar a b
 1 == 1.0 ➡️ true
 1 == "hola" ➡️ false
 1 == "uno" ➡️ false
+1 == "one" ➡️ false
 1 == "true" ➡️ false
 
 Uno se suele marear por lo que puse una tabla en imagenes
