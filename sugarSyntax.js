@@ -107,4 +107,3 @@ function mostrarProducto({name, id, type, price, stock, description}){
 }
 
 mostrarProducto(producto)
-

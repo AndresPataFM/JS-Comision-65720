@@ -1,3 +1,4 @@
+// Introducción de ciclos y control de flujo
 // saludo
 alert("Bienvenido a la trivia animal de hoy. ¡Veamos cuanto conocimiento animal tenés a tu disposición!")
 
@@ -7,7 +8,7 @@ const segundaPreguntaRespuesta = "B"
 const terceraPreguntaRespuesta = "C"
 const cuartaPreguntaRespuesta = "B"
 // Texto preguntas
-const primerPreguntaTexto = "¿Qué animal tiene 1 pie? \n A | Caracol.\n B | Hornero\n C | 2 Girafa \n D | Mollusco"
+const primerPreguntaTexto = "¿Qué animal tiene 1 pie? \n A | Caracol.\n B | Hornero\n C | Girafa \n D | Mollusco"
 const segundaPreguntaTexto = "¿Que animal es más dañino al hombre? \n A | Tiburón.\n B | Mosquito\n C | Jaguarete \n D | Vaca"
 const terceraPreguntaTexto = "¿Cuál animal es el que más se encuentra domesticado? \n A | Perro.\n B | Vaca\n C | Gallina \n D | Gato"
 const cuartaPreguntaTexto = "¿Cuál es el animal más rapido? \n A | Cheeta.\n B | Halcón Peregrino\n C | Pez espada \n D | Gacela de Thomson"
@@ -50,15 +51,16 @@ while(loop){
 
   */
   const primerPreguntaValidar = primerPregunta === primerPreguntaRespuesta ? "correcto" : "erróneo"
-  const segundaPreguntaValidar = segundaPregunta === primerPreguntaRespuesta ? "correcto" : "erróneo"
-  const terceraPreguntaValidar = terceraPregunta === primerPreguntaRespuesta ? "correcto" : "erróneo"
-  const cuartaPreguntaValidar = cuartaPregunta === primerPreguntaRespuesta ? "correcto" : "erróneo"
+  const segundaPreguntaValidar = segundaPregunta === segundaPreguntaRespuesta ? "correcto" : "erróneo"
+  const terceraPreguntaValidar = terceraPregunta === terceraPreguntaRespuesta ? "correcto" : "erróneo"
+  const cuartaPreguntaValidar = cuartaPregunta === cuartaPreguntaRespuesta ? "correcto" : "erróneo"
   // Se puede agregar puntuación
-  const evaluacion = `Habiendo realizado el test aca esta tu resultado: \n 1 - ${primerPreguntaRespuesta} vos ingresaste ${primerPregunta} lo que es ${primerPreguntaValidar}.\n 1 - ${segundaPreguntaRespuesta} vos ingresaste ${segundaPregunta} lo que es ${segundaPreguntaValidar}.\n 1 - ${terceraPreguntaRespuesta} vos ingresaste ${terceraPregunta} lo que es ${terceraPreguntaValidar}.\n 1 - ${cuartaPreguntaRespuesta} vos ingresaste ${cuartaPregunta} lo que es ${cuartaPreguntaValidar}.`
+  
+  const evaluacion = `Habiendo realizado el test aca esta tu resultado: \n 1 - ${primerPreguntaRespuesta} vos ingresaste ${primerPregunta} lo que es ${primerPreguntaValidar}.\n 2 - ${segundaPreguntaRespuesta} vos ingresaste ${segundaPregunta} lo que es ${segundaPreguntaValidar}.\n 3 - ${terceraPreguntaRespuesta} vos ingresaste ${terceraPregunta} lo que es ${terceraPreguntaValidar}.\n 4 - ${cuartaPreguntaRespuesta} vos ingresaste ${cuartaPregunta} lo que es ${cuartaPreguntaValidar}.`
   alert(evaluacion)
   loop = confirm("¿Desea volver a realizar esta trivia?")
 }
 
 // Despedida
-const despedida = "Espero que hayan disfrutado de estas preguntas de trivia, ojala los veamos de vuelta pronto"
+const despedida = "Espero que hayan disfrutado de estas preguntas de trivia, ojalá los veamos de vuelta pronto"
 alert(despedida)
