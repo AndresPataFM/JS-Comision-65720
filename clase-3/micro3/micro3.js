@@ -16,9 +16,16 @@ ________ (sumar());
 */
 
 
+// function sumar() {
+//   let numero1 = 5;
+//   let resultado = numero1 + 5;
 
+//   return resultado;
+// }
 
+// console.log(sumar());
 
+const sumar = (num1,num2)=>num1+num2
 
 
 

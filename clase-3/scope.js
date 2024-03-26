@@ -34,10 +34,10 @@ let global = "hola soy global"
     }
 }
 // soyFuncion()
-// console.log("global", global)
-// console.log("enScope", enScope)
-// console.log("enScope2", enScope2)
-// console.log("enScope3", enScope3)
 // console.log("feo", feo)
 // console.log("horrible", horrible)
+// console.log("enScope", enScope)
+// console.log("global", global)
+// console.log("enScope2", enScope2)
+// console.log("enScope3", enScope3)
 // console.log("hediondo", hediondo)
